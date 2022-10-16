@@ -9,7 +9,6 @@ builder.Services.AddCors(options =>
                 {
                     policy.WithOrigins(
                         "http://localhost:4200")
-                           // .WithMethods("PUT", "DELETE");
                            .AllowAnyMethod()
                            .AllowAnyOrigin()
                            .AllowAnyHeader();
